@@ -1,0 +1,82 @@
+
+PCRE2 C library tests using test data from ./testdata
+PCRE2 version 10.49 2026-09-28 (8-bit)
+
+---- Testing 8-bit library ----
+
+Test 0: Unchecked pcre2test argument tests (to improve coverage)
+  OK
+Test 1: Main non-UTF, non-UCP functionality (compatible with Perl >= 5.10)
+  OK
+  OK with JIT
+Test 2: API, errors, internals and non-Perl stuff (excluding UTF-8)
+  OK
+  OK with JIT
+Cannot test locale-specific features - none of the 'fr_FR', 'fr_CA',
+'fr' or 'french' locales can be set, or the "locale" command is
+not available to check for them.
+ 
+Test 4: UTF-8 and Unicode property support (compatible with Perl >= 5.10)
+  OK
+  OK with JIT
+Test 5: API, internals, and non-Perl stuff for UTF-8 and UCP support
+  OK
+  OK with JIT
+Test 6: DFA matching main non-UTF, non-UCP functionality
+  OK
+Test 7: DFA matching with UTF-8 and Unicode property support
+  OK
+Test 8: Internal offsets and code size tests
+  OK
+Test 9: Specials for the basic 8-bit library
+  OK
+  OK with JIT
+Test 10: Specials for the 8-bit library with UTF-8 and UCP support
+  OK
+  OK with JIT
+Test 11: Specials for the basic 16-bit and 32-bit libraries
+  Skipped when running 8-bit tests
+Test 12: Specials for the 16-bit and 32-bit libraries UTF and UCP support
+  Skipped when running 8-bit tests
+Test 13: DFA specials for the basic 16-bit and 32-bit libraries
+  Skipped when running 8-bit tests
+Test 14: DFA specials for UTF and UCP support
+  OK
+Test 15: Non-JIT limits and other non-JIT tests
+  OK
+Test 16: JIT-specific features when JIT is not available
+  Skipped because JIT is available
+Test 17: JIT-specific features when JIT is available
+  OK
+Test 18: Tests of the POSIX interface, excluding UTF/UCP
+  OK
+Test 19: Tests of the POSIX interface with UTF/UCP
+  OK
+Test 20: Serialization and code copy tests
+  OK
+Test 21: \C tests without UTF (supported for DFA matching)
+  OK
+  OK with JIT
+  OK with DFA
+Test 22: \C tests with UTF (not supported for DFA matching)
+  OK
+  OK with JIT
+Test 23: \C disabled test
+  Skipped because \C is not disabled
+Test 24: Non-UTF pattern conversion tests
+  OK
+Test 25: UTF pattern conversion tests
+  OK
+Test 26: Unicode property tests (compatible with Perl >= 5.38)
+  OK
+  OK with JIT
+Test 27: Auto-generated unicode property tests
+  OK
+  OK with JIT
+Test 28: EBCDIC-specific tests
+  Skipped when not targetting EBCDIC
+Test 29: EBCDIC-specific tests (for NL=0x25)
+  Skipped when not targetting EBCDIC
+
+All tests passed.
+PASS RunTest (exit status: 0)

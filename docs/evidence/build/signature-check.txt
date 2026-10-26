@@ -1,0 +1,12 @@
+gpgv: Signature made Mon Sep 28 12:48:37 2026 UTC
+gpgv:                using RSA key BACF71F10404D5761C09D392021DE40BFB63B406
+gpgv: Good signature from "Nicholas Wilson <nicholas@nicholaswilson.me.uk>"
+gpgv:                 aka "Nicholas Wilson <niwilson@microsoft.com>"
+OK: pcre2-10.49.tar.gz signed by primary key A95536204A3BB489715231282A98E77EB6F24CA8
+gpgv: Signature made Tue Apr 16 14:39:29 2024 UTC
+gpgv:                using RSA key 43387825DDB1BB97EC36BA5D007C8D7C15D87369
+gpgv:                issuer "r.arutyunyan@f5.com"
+gpgv: Good signature from "Roman Arutyunyan <r.arutyunyan@f5.com>"
+gpgv:                 aka "Roman Arutyunyan <arut@nginx.com>"
+OK: nginx-1.25.5.tar.gz signed by primary key 43387825DDB1BB97EC36BA5D007C8D7C15D87369
+njs-0.8.4.tar.gz: no upstream signature published; checked by sha256 only

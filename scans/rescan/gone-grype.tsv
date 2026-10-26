@@ -1,0 +1,251 @@
+CVE-2022-49043	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2023-25433	incidental	newer-bookworm	libtiff6@4.5.0-6+deb12u1
+CVE-2023-26965	incidental	newer-bookworm	libtiff6@4.5.0-6+deb12u1
+CVE-2023-26966	incidental	newer-bookworm	libtiff6@4.5.0-6+deb12u1
+CVE-2023-2908	incidental	newer-bookworm	libtiff6@4.5.0-6+deb12u1
+CVE-2023-29383	incidental	newer-bookworm	login@1:4.13+dfsg1-1+b1 passwd@1:4.13+dfsg1-1+b1
+CVE-2023-29659	incidental	newer-bookworm	libheif1@1.15.1-1
+CVE-2023-31484	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2023-3618	incidental	newer-bookworm	libtiff6@4.5.0-6+deb12u1
+CVE-2023-39615	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2023-4039	incidental	newer-bookworm	gcc-12-base@12.2.0-14 libgcc-s1@12.2.0-14 libstdc++6@12.2.0-14
+CVE-2023-40403	incidental	newer-bookworm	libxslt1.1@1.1.35-1
+CVE-2023-45322	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2023-4641	incidental	newer-bookworm	login@1:4.13+dfsg1-1+b1 passwd@1:4.13+dfsg1-1+b1
+CVE-2023-49462	incidental	newer-bookworm	libheif1@1.15.1-1
+CVE-2023-50387	incidental	newer-bookworm	libsystemd0@252.22-1~deb12u1 libudev1@252.22-1~deb12u1
+CVE-2023-50868	incidental	newer-bookworm	libsystemd0@252.22-1~deb12u1 libudev1@252.22-1~deb12u1
+CVE-2023-51792	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2023-52356	incidental	newer-bookworm	libtiff6@4.5.0-6+deb12u1
+CVE-2023-52425	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2023-5678	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2023-6129	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2023-6237	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2024-0727	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2024-11053	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2024-12133	incidental	newer-bookworm	libtasn1-6@4.19.0-2
+CVE-2024-12243	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2024-13176	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2024-2004	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2024-22365	incidental	newer-bookworm	libpam-modules@1.5.2-6+deb12u1 libpam-modules-bin@1.5.2-6+deb12u1 libpam-runtime@1.5.2-6+deb12u1 libpam0g@1.5.2-6+deb12u1
+CVE-2024-2398	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2024-25062	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2024-2511	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2024-26462	incidental	newer-bookworm	libgssapi-krb5-2@1.20.1-2+deb12u1 libk5crypto3@1.20.1-2+deb12u1 libkrb5-3@1.20.1-2+deb12u1 libkrb5support0@1.20.1-2+deb12u1
+CVE-2024-28182	incidental	newer-bookworm	libnghttp2-14@1.52.0-1+deb12u1
+CVE-2024-28757	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2024-28834	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2024-28835	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2024-34459	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2024-37370	incidental	newer-bookworm	libgssapi-krb5-2@1.20.1-2+deb12u1 libk5crypto3@1.20.1-2+deb12u1 libkrb5-3@1.20.1-2+deb12u1 libkrb5support0@1.20.1-2+deb12u1
+CVE-2024-37371	incidental	newer-bookworm	libgssapi-krb5-2@1.20.1-2+deb12u1 libk5crypto3@1.20.1-2+deb12u1 libkrb5-3@1.20.1-2+deb12u1 libkrb5support0@1.20.1-2+deb12u1
+CVE-2024-38949	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2024-38950	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2024-41311	incidental	newer-bookworm	libheif1@1.15.1-1
+CVE-2024-45490	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2024-45491	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2024-45492	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2024-4603	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2024-4741	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2024-50602	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2024-5171	incidental	newer-bookworm	libaom3@3.6.0-1
+CVE-2024-5535	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2024-55549	incidental	newer-bookworm	libxslt1.1@1.1.35-1
+CVE-2024-56171	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2024-56406	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2024-6119	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2024-7006	incidental	newer-bookworm	libtiff6@4.5.0-6+deb12u1
+CVE-2024-7264	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2024-8096	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2024-8176	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2024-9143	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2024-9681	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2025-0167	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2025-0395	incidental	newer-bookworm	libc-bin@2.36-9+deb12u7 libc6@2.36-9+deb12u7
+CVE-2025-0838	incidental	newer-bookworm	libabsl20220623@20220623.1-1
+CVE-2025-10148	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2025-1390	incidental	newer-bookworm	libcap2@1:2.66-4
+CVE-2025-14524	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2025-14819	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2025-14831	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2025-15281	incidental	newer-bookworm	libc-bin@2.36-9+deb12u7 libc6@2.36-9+deb12u7
+CVE-2025-15467	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2025-15649	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2025-15661	incidental	newer-bookworm	libssh2-1@1.10.0-3+b1
+CVE-2025-24528	incidental	newer-bookworm	libgssapi-krb5-2@1.20.1-2+deb12u1 libk5crypto3@1.20.1-2+deb12u1 libkrb5-3@1.20.1-2+deb12u1 libkrb5support0@1.20.1-2+deb12u1
+CVE-2025-24855	incidental	newer-bookworm	libxslt1.1@1.1.35-1
+CVE-2025-24928	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2025-27113	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2025-27363	incidental	newer-bookworm	libfreetype6@2.12.1+dfsg-5
+CVE-2025-31115	incidental	newer-bookworm	liblzma5@5.4.1-0.2
+CVE-2025-32414	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2025-32415	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2025-32988	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2025-32989	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2025-32990	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2025-3576	incidental	newer-bookworm	libgssapi-krb5-2@1.20.1-2+deb12u1 libk5crypto3@1.20.1-2+deb12u1 libkrb5-3@1.20.1-2+deb12u1 libkrb5support0@1.20.1-2+deb12u1
+CVE-2025-40909	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2025-4598	incidental	newer-bookworm	libsystemd0@252.22-1~deb12u1 libudev1@252.22-1~deb12u1
+CVE-2025-4802	incidental	newer-bookworm	libc-bin@2.36-9+deb12u7 libc6@2.36-9+deb12u7
+CVE-2025-48174	incidental	newer-bookworm	libavif15@0.11.1-1
+CVE-2025-48175	incidental	newer-bookworm	libavif15@0.11.1-1
+CVE-2025-49794	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2025-49796	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2025-5222	incidental	newer-bookworm	libicu72@72.1-3
+CVE-2025-59375	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2025-6020	incidental	newer-bookworm	libpam-modules@1.5.2-6+deb12u1 libpam-modules-bin@1.5.2-6+deb12u1 libpam-runtime@1.5.2-6+deb12u1 libpam0g@1.5.2-6+deb12u1
+CVE-2025-6021	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2025-6170	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2025-6297	incidental	newer-bookworm	dpkg@1.21.22
+CVE-2025-6395	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2025-64505	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2025-64506	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2025-64720	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2025-65018	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2025-66293	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2025-68160	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2025-68973	incidental	newer-bookworm	gpgv@2.2.40-1.1
+CVE-2025-69418	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2025-69419	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2025-69420	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2025-69421	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2025-7424	incidental	newer-bookworm	libxslt1.1@1.1.35-1
+CVE-2025-8058	incidental	newer-bookworm	libc-bin@2.36-9+deb12u7 libc6@2.36-9+deb12u7
+CVE-2025-8732	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2025-9230	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2025-9232	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2025-9714	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2025-9820	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2025-9900	incidental	newer-bookworm	libtiff6@4.5.0-6+deb12u1
+CVE-2026-0861	incidental	newer-bookworm	libc-bin@2.36-9+deb12u7 libc6@2.36-9+deb12u7
+CVE-2026-0915	incidental	newer-bookworm	libc-bin@2.36-9+deb12u7 libc6@2.36-9+deb12u7
+CVE-2026-0989	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2026-0990	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2026-0992	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2026-102633	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-103111	intentional	intentional	libpcre2-8-0@10.42-1
+CVE-2026-111497	incidental	newer-bookworm	libbrotli1@1.0.9-2+b6
+CVE-2026-12087	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-13221	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-1757	incidental	newer-bookworm	libxml2@2.9.14+dfsg-1.3~deb12u1
+CVE-2026-19487	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-2219	incidental	newer-bookworm	dpkg@1.21.22
+CVE-2026-22695	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2026-22795	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-22796	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-22801	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2026-24515	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-25210	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-25646	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2026-27135	incidental	newer-bookworm	libnghttp2-14@1.52.0-1+deb12u1
+CVE-2026-28387	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-28388	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-28389	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-28390	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-29111	incidental	newer-bookworm	libsystemd0@252.22-1~deb12u1 libudev1@252.22-1~deb12u1
+CVE-2026-31789	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-31790	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-32776	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-32777	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-32778	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-33164	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2026-33165	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2026-33416	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2026-33636	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2026-33845	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-33846	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-34180	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-34182	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-34743	incidental	newer-bookworm	liblzma5@5.4.1-0.2
+CVE-2026-34757	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2026-3783	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2026-3784	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2026-3833	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-40225	incidental	newer-bookworm	libsystemd0@252.22-1~deb12u1 libudev1@252.22-1~deb12u1
+CVE-2026-40226	incidental	newer-bookworm	libsystemd0@252.22-1~deb12u1 libudev1@252.22-1~deb12u1
+CVE-2026-40355	incidental	newer-bookworm	libgssapi-krb5-2@1.20.1-2+deb12u1 libk5crypto3@1.20.1-2+deb12u1 libkrb5-3@1.20.1-2+deb12u1 libkrb5support0@1.20.1-2+deb12u1
+CVE-2026-40356	incidental	newer-bookworm	libgssapi-krb5-2@1.20.1-2+deb12u1 libk5crypto3@1.20.1-2+deb12u1 libkrb5-3@1.20.1-2+deb12u1 libkrb5support0@1.20.1-2+deb12u1
+CVE-2026-4046	incidental	newer-bookworm	libc-bin@2.36-9+deb12u7 libc6@2.36-9+deb12u7
+CVE-2026-4105	incidental	newer-bookworm	libsystemd0@252.22-1~deb12u1 libudev1@252.22-1~deb12u1
+CVE-2026-41989	incidental	newer-bookworm	libgcrypt20@1.10.1-3
+CVE-2026-42009	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-42010	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-42011	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-42012	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-42013	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-42014	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-42015	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-42496	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-42497	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-42766	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-42767	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-42770	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-4437	incidental	newer-bookworm	libc-bin@2.36-9+deb12u7 libc6@2.36-9+deb12u7
+CVE-2026-4438	incidental	newer-bookworm	libc-bin@2.36-9+deb12u7 libc6@2.36-9+deb12u7
+CVE-2026-45186	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-45382	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2026-45383	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2026-45445	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-45446	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-45447	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-46675	incidental	newer-bookworm	libpng16-16@1.6.39-2
+CVE-2026-4775	incidental	newer-bookworm	libtiff6@4.5.0-6+deb12u1
+CVE-2026-4878	incidental	newer-bookworm	libcap2@1:2.66-4
+CVE-2026-48959	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-48962	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-49295	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2026-49337	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2026-49346	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2026-50219	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-5260	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-5419	incidental	newer-bookworm	libgnutls30@3.7.9-2+deb12u2
+CVE-2026-54240	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2026-54241	incidental	newer-bookworm	libde265-0@1.0.11-1+deb12u2
+CVE-2026-54874	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-56131	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-56132	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-56208	incidental	newer-bookworm	libaom3@3.6.0-1
+CVE-2026-56209	incidental	newer-bookworm	libaom3@3.6.0-1
+CVE-2026-56210	incidental	newer-bookworm	libaom3@3.6.0-1
+CVE-2026-56211	incidental	newer-bookworm	libaom3@3.6.0-1
+CVE-2026-56403	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-56404	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-56405	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-56406	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-56407	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-56408	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-56409	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-56410	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-56411	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-56412	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-57432	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-57433	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-5773	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2026-58050	incidental	newer-bookworm	libssh2-1@1.10.0-3+b1
+CVE-2026-58051	incidental	newer-bookworm	libssh2-1@1.10.0-3+b1
+CVE-2026-5958	incidental	newer-bookworm	sed@4.9-1
+CVE-2026-63072	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-63074	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-63076	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-66032	incidental	newer-bookworm	libssh2-1@1.10.0-3+b1
+CVE-2026-66034	incidental	newer-bookworm	libssh2-1@1.10.0-3+b1
+CVE-2026-66046	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-7010	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-7017	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-7168	incidental	newer-bookworm	curl@7.88.1-10+deb12u5 libcurl4@7.88.1-10+deb12u5
+CVE-2026-72522	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-7383	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-75803	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-7598	incidental	newer-bookworm	libssh2-1@1.10.0-3+b1
+CVE-2026-76957	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-77214	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-8376	incidental	newer-bookworm	perl-base@5.36.0-7+deb12u1
+CVE-2026-86145	incidental	pcre2-bump	libpcre2-8-0@10.42-1
+CVE-2026-89156	incidental	pcre2-bump	libpcre2-8-0@10.42-1
+CVE-2026-89157	incidental	pcre2-bump	libpcre2-8-0@10.42-1
+CVE-2026-89158	incidental	pcre2-bump	libpcre2-8-0@10.42-1
+CVE-2026-89160	incidental	pcre2-bump	libpcre2-8-0@10.42-1
+CVE-2026-89161	incidental	pcre2-bump	libpcre2-8-0@10.42-1
+CVE-2026-9076	incidental	newer-bookworm	libssl3@3.0.11-1~deb12u2 openssl@3.0.11-1~deb12u2
+CVE-2026-93990	incidental	newer-bookworm	libexpat1@2.5.0-1
+CVE-2026-9672	incidental	newer-bookworm	libgd3@2.3.3-9

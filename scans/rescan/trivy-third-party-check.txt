@@ -1,0 +1,10 @@
+$ trivy image --platform linux/amd64 --skip-db-update --scanners vuln --debug --format json -o /dev/null nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c 2>&1 | grep 'Skipping third-party'
+[debian] Skipping third-party packages	packages=[nginx nginx-module-geoip nginx-module-image-filter nginx-module-njs nginx-module-xslt]
+$ docker run --rm --platform linux/amd64 --entrypoint dpkg-query nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c -W -f='${Package} ${Version} Maintainer=${Maintainer}\n' nginx
+nginx 1.25.5-1~bookworm Maintainer=NGINX Packaging <nginx-packaging@f5.com>
+
+$ trivy image --platform linux/amd64 --skip-db-update --scanners vuln --debug --format json -o /dev/null echo-nginx:1.25.5-echo1 2>&1 | grep 'Skipping third-party'
+(no output: Trivy skips no package, so it matches our nginx against Debian data)
+$ docker run --rm --platform linux/amd64 --entrypoint dpkg-query echo-nginx:1.25.5-echo1 -W -f='${Package} ${Version} Maintainer=${Maintainer}\n' nginx
+nginx 1.25.5-1echo1 Maintainer=Yechezkel Kofman <yechezkelkofman@gmail.com>
+

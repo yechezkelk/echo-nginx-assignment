@@ -1,0 +1,155 @@
+== install both packages (apt resolves the other runtime libs from Debian) ==
+Preparing to unpack .../libpcre2-8-0_10.49-0echo1_amd64.deb ...
+Unpacking libpcre2-8-0:amd64 (10.49-0echo1) over (10.42-1+deb12u2) ...
+Setting up libpcre2-8-0:amd64 (10.49-0echo1) ...
+Preparing to unpack .../38-nginx_1.25.5-1echo1_amd64.deb ...
+Unpacking nginx (1.25.5-1echo1) ...
+Setting up nginx (1.25.5-1echo1) ...
+
+== 1. dpkg sees libpcre2-8-0 10.49 ==
+ii  libpcre2-8-0:amd64 10.49-0echo1 amd64        New Perl Compatible Regular Expression Library- 8 bit runtime files
+PASS: libpcre2-8-0 version is 10.49-0echo1 (got 10.49-0echo1)
+
+== 2. nginx and nginx-debug load the 10.49 library file ==
+$ ldd /usr/sbin/nginx | grep pcre2   (load address removed)
+	libpcre2-8.so.0 => /lib/x86_64-linux-gnu/libpcre2-8.so.0
+readlink -f /lib/x86_64-linux-gnu/libpcre2-8.so.0 -> /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.16.1
+PASS: nginx: libpcre2-8.so.0 resolves to libpcre2-8.so.0.16.1
+PASS: nginx: that file belongs to our 10.49 package
+$ ldd /usr/sbin/nginx-debug | grep pcre2   (load address removed)
+	libpcre2-8.so.0 => /lib/x86_64-linux-gnu/libpcre2-8.so.0
+readlink -f /lib/x86_64-linux-gnu/libpcre2-8.so.0 -> /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.16.1
+PASS: nginx-debug: libpcre2-8.so.0 resolves to libpcre2-8.so.0.16.1
+PASS: nginx-debug: that file belongs to our 10.49 package
+
+== 3. nginx -t with all 6 modules, nginx-debug -t with all 6 -debug.so ==
+load_module modules/ngx_http_xslt_filter_module.so;
+load_module modules/ngx_http_image_filter_module.so;
+load_module modules/ngx_http_geoip_module.so;
+load_module modules/ngx_stream_geoip_module.so;
+load_module modules/ngx_http_js_module.so;
+load_module modules/ngx_stream_js_module.so;
+$ /usr/sbin/nginx -t -c /tmp/nginx-modules.conf
+nginx: the configuration file /tmp/nginx-modules.conf syntax is ok
+nginx: configuration file /tmp/nginx-modules.conf test is successful
+PASS: nginx -t with 6 modules
+load_module modules/ngx_http_xslt_filter_module-debug.so;
+load_module modules/ngx_http_image_filter_module-debug.so;
+load_module modules/ngx_http_geoip_module-debug.so;
+load_module modules/ngx_stream_geoip_module-debug.so;
+load_module modules/ngx_http_js_module-debug.so;
+load_module modules/ngx_stream_js_module-debug.so;
+$ /usr/sbin/nginx-debug -t -c /tmp/nginx-debug-modules.conf
+nginx: the configuration file /tmp/nginx-debug-modules.conf syntax is ok
+nginx: configuration file /tmp/nginx-debug-modules.conf test is successful
+PASS: nginx-debug -t with 6 modules-debug
+$ nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+PASS: nginx -t (default config)
+
+== 4. nginx -V vs baseline ==
+$ nginx -V
+nginx version: nginx/1.25.5
+built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+built with OpenSSL 3.0.22 25 Aug 2026
+TLS SNI support enabled
+configure arguments: --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx --modules-path=/usr/lib/nginx/modules --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --pid-path=/var/run/nginx.pid --lock-path=/var/run/nginx.lock --http-client-body-temp-path=/var/cache/nginx/client_temp --http-proxy-temp-path=/var/cache/nginx/proxy_temp --http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp --http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp --http-scgi-temp-path=/var/cache/nginx/scgi_temp --user=nginx --group=nginx --with-compat --with-file-aio --with-threads --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_flv_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_mp4_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-http_v3_module --with-mail --with-mail_ssl_module --with-stream --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module --with-cc-opt='-g -O2 -ffile-prefix-map=/work/nginx-1.25.5=. -fstack-protector-strong -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fPIC' --with-ld-opt='-Wl,-z,relro -Wl,-z,now -Wl,--as-needed -pie' --with-http_xslt_module=dynamic --with-http_image_filter_module=dynamic --with-http_geoip_module=dynamic --with-stream_geoip_module=dynamic --add-dynamic-module=/work/njs-0.8.4/nginx
+$ diff baseline ours (after removing allowed differences)
+(no difference)
+PASS: nginx -V matches baseline apart from module args and build path
+allowed differences, as found:
+< --with-cc-opt='-g -O2 -ffile-prefix-map=/data/builder/debuild/nginx-1.25.5/debian/debuild-base/nginx-1.25.5=. -fstack-protector-strong -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fPIC'
+> --with-cc-opt='-g -O2 -ffile-prefix-map=/work/nginx-1.25.5=. -fstack-protector-strong -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fPIC'
+> --with-http_xslt_module=dynamic
+> --with-http_image_filter_module=dynamic
+> --with-http_geoip_module=dynamic
+> --with-stream_geoip_module=dynamic
+> --add-dynamic-module=/work/njs-0.8.4/nginx
+$ diff nginx-args nginx-debug-args
+47a48
+> --with-debug
+PASS: nginx-debug = nginx args + --with-debug only
+
+== 5. file modes and owners (baseline: binaries 0755, .so 0644, config/html 0644, dirs 0755, root:root) ==
+$ sh -c stat -c "%a %U:%G %n" /usr/sbin/nginx /usr/sbin/nginx-debug /usr/lib/nginx/modules/*.so     /etc/nginx /etc/nginx/conf.d /etc/nginx/*.* /etc/nginx/*_params /etc/nginx/conf.d/default.conf     /usr/lib/nginx /usr/lib/nginx/modules /usr/share/nginx /usr/share/nginx/html /usr/share/nginx/html/*     /var/cache/nginx /var/log/nginx
+755 root:root /usr/sbin/nginx
+755 root:root /usr/sbin/nginx-debug
+644 root:root /usr/lib/nginx/modules/ngx_http_geoip_module-debug.so
+644 root:root /usr/lib/nginx/modules/ngx_http_geoip_module.so
+644 root:root /usr/lib/nginx/modules/ngx_http_image_filter_module-debug.so
+644 root:root /usr/lib/nginx/modules/ngx_http_image_filter_module.so
+644 root:root /usr/lib/nginx/modules/ngx_http_js_module-debug.so
+644 root:root /usr/lib/nginx/modules/ngx_http_js_module.so
+644 root:root /usr/lib/nginx/modules/ngx_http_xslt_filter_module-debug.so
+644 root:root /usr/lib/nginx/modules/ngx_http_xslt_filter_module.so
+644 root:root /usr/lib/nginx/modules/ngx_stream_geoip_module-debug.so
+644 root:root /usr/lib/nginx/modules/ngx_stream_geoip_module.so
+644 root:root /usr/lib/nginx/modules/ngx_stream_js_module-debug.so
+644 root:root /usr/lib/nginx/modules/ngx_stream_js_module.so
+755 root:root /etc/nginx
+755 root:root /etc/nginx/conf.d
+755 root:root /etc/nginx/conf.d
+644 root:root /etc/nginx/mime.types
+644 root:root /etc/nginx/nginx.conf
+644 root:root /etc/nginx/fastcgi_params
+644 root:root /etc/nginx/scgi_params
+644 root:root /etc/nginx/uwsgi_params
+644 root:root /etc/nginx/conf.d/default.conf
+755 root:root /usr/lib/nginx
+755 root:root /usr/lib/nginx/modules
+755 root:root /usr/share/nginx
+755 root:root /usr/share/nginx/html
+644 root:root /usr/share/nginx/html/50x.html
+644 root:root /usr/share/nginx/html/index.html
+755 root:root /var/cache/nginx
+755 root:root /var/log/nginx
+$ ls -l /etc/nginx/modules
+lrwxrwxrwx 1 root root 22 Oct 26 09:47 /etc/nginx/modules -> /usr/lib/nginx/modules
+PASS: binaries 0755 root:root
+PASS: 12 modules, all 0644 root:root
+PASS: config + html files 0644 root:root
+PASS: all 19 dirs in the package are 0755 root:root
+PASS: /etc/nginx/modules -> /usr/lib/nginx/modules
+$ readelf -S <file> | grep -c .symtab   (0 = no symbol table = stripped)
+0 /usr/sbin/nginx
+0 /usr/sbin/nginx-debug
+0 /usr/lib/nginx/modules/ngx_http_geoip_module-debug.so
+0 /usr/lib/nginx/modules/ngx_http_geoip_module.so
+0 /usr/lib/nginx/modules/ngx_http_image_filter_module-debug.so
+0 /usr/lib/nginx/modules/ngx_http_image_filter_module.so
+0 /usr/lib/nginx/modules/ngx_http_js_module-debug.so
+0 /usr/lib/nginx/modules/ngx_http_js_module.so
+0 /usr/lib/nginx/modules/ngx_http_xslt_filter_module-debug.so
+0 /usr/lib/nginx/modules/ngx_http_xslt_filter_module.so
+0 /usr/lib/nginx/modules/ngx_stream_geoip_module-debug.so
+0 /usr/lib/nginx/modules/ngx_stream_geoip_module.so
+0 /usr/lib/nginx/modules/ngx_stream_js_module-debug.so
+0 /usr/lib/nginx/modules/ngx_stream_js_module.so
+PASS: binaries and 12 modules are stripped
+PASS: libpcre2-8.so.0.16.1 is stripped
+
+== 6. nginx user and group (baseline: uid=101(nginx) gid=101(nginx) groups=101(nginx)) ==
+$ id nginx
+uid=101(nginx) gid=101(nginx) groups=101(nginx)
+$ getent passwd nginx
+nginx:x:101:101:nginx user:/nonexistent:/bin/false
+$ getent group nginx
+nginx:x:101:
+PASS: id nginx matches baseline
+PASS: passwd line matches baseline
+
+== 7. dpkg owns /etc/nginx/* as conffiles ==
+ /etc/nginx/conf.d/default.conf 25c02145e4a2e1d2bc6da5d585cddd32
+ /etc/nginx/fastcgi_params 4729c30112ca3071f4650479707993ad
+ /etc/nginx/mime.types 754582375e90b09edaa6d3dbd657b3cf
+ /etc/nginx/nginx.conf 756e7eaae19e95b5f49ce81e73b10512
+ /etc/nginx/scgi_params df8c71e25e0356ffc539742f08fddfff
+ /etc/nginx/uwsgi_params 88ac833ee8ea60904a8b3063fde791de
+PASS: 6 conffiles under /etc/nginx (got 6)
+$ dpkg-query -W -f=${Package} ${Version}
+ nginx libpcre2-8-0
+libpcre2-8-0 10.49-0echo1
+nginx 1.25.5-1echo1
+
+ALL CHECKS PASSED

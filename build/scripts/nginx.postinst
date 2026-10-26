@@ -1,0 +1,17 @@
+#!/bin/sh
+# postinst for our nginx package: create the nginx group and user with uid/gid 101,
+# exactly like the baseline image (docs/baseline.md section 8:
+# uid=101(nginx) gid=101(nginx); passwd line "nginx:x:101:101:nginx user:/nonexistent:/bin/false").
+set -e
+
+if [ "$1" = configure ]; then
+    if ! getent group nginx >/dev/null; then
+        groupadd --system --gid 101 nginx
+    fi
+    if ! getent passwd nginx >/dev/null; then
+        useradd --system --uid 101 --gid nginx --no-create-home \
+            --home-dir /nonexistent --comment "nginx user" --shell /bin/false nginx
+    fi
+fi
+
+exit 0

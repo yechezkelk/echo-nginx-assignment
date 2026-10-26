@@ -1,0 +1,41 @@
+$ trivy --version
+Version: 0.76.1
+Vulnerability DB:
+  Version: 2
+  UpdatedAt: 2026-10-26 07:15:18.945937093 +0000 UTC
+  NextUpdate: 2026-10-27 07:15:18.945936953 +0000 UTC
+  DownloadedAt: 2026-10-26 08:16:23.030808178 +0000 UTC
+Java DB:
+  Version: 1
+  UpdatedAt: 2026-10-25 00:59:20.065031654 +0000 UTC
+  NextUpdate: 2026-10-28 00:59:20.065031063 +0000 UTC
+  DownloadedAt: 2026-10-25 08:08:30.74524721 +0000 UTC
+
+$ grype version
+Application:         grype
+Version:             0.121.0
+BuildDate:           2026-10-19T20:26:34Z
+GitCommit:           afe2742527d98d822da06c9f32eed86fe3d193e0
+GitDescription:      v0.121.0
+Platform:            linux/amd64
+GoVersion:           go1.26.8
+Compiler:            gc
+Syft Version:        v1.55.0
+Supported DB Schema: 6
+
+$ grype db status
+Path:      /root/.cache/grype/db/6/vulnerability.db
+Schema:    v6.1.10
+Built:     2026-10-26T06:38:44Z
+From:      https://grype.anchore.io/databases/v6/vulnerability-db_v6.1.10_2026-10-26T00:32:02Z_1792996724.tar.zst?checksum=sha256%3A214b59fbe13608346ee1b22583ec0531083d6088c33891f3520d0fbdedb1b308
+Status:    valid
+
+# DB metadata as written into the JSON reports:
+scans/rescan/baseline-trivy.json
+{"CreatedAt":"2026-10-26T16:49:12.696986208+02:00","ArtifactName":"nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c","ImageID":"sha256:e784f4560448b14a66f55c26e1b4dad2c2877cc73d001b7cd0b18e24a700a070","OS":{"Family":"debian","Name":"12.5"}}
+scans/rescan/ours-trivy.json
+{"CreatedAt":"2026-10-26T16:49:13.032699365+02:00","ArtifactName":"echo-nginx:1.25.5-echo1","ImageID":"sha256:6563287b70e2d1aeff5bc1874ddf1d7c0ee5a268c89e39519f2f45eb156784a8","OS":{"Family":"debian","Name":"12.15"}}
+scans/rescan/baseline-grype.json
+{"v":"0.121.0","built":"2026-10-26T06:38:44Z","from":"https://grype.anchore.io/databases/v6/vulnerability-db_v6.1.10_2026-10-26T00:32:02Z_1792996724.tar.zst?checksum=sha256%3A214b59fbe13608346ee1b22583ec0531083d6088c33891f3520d0fbdedb1b308","image":"nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c"}
+scans/rescan/ours-grype.json
+{"v":"0.121.0","built":"2026-10-26T06:38:44Z","from":"https://grype.anchore.io/databases/v6/vulnerability-db_v6.1.10_2026-10-26T00:32:02Z_1792996724.tar.zst?checksum=sha256%3A214b59fbe13608346ee1b22583ec0531083d6088c33891f3520d0fbdedb1b308","image":"echo-nginx:1.25.5-echo1"}

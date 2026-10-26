@@ -1,0 +1,26 @@
+# Provenance of rootfs/
+# Files copied out of the baseline image with `docker create` + `docker cp`
+# (no binaries, no .so files). Paths are absolute paths inside the image.
+source_image: nginx:1.25-bookworm
+source_digest: nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+platform: linux/amd64
+copied_on: 2026-10-26
+copied_paths: /etc/nginx /usr/share/nginx /docker-entrypoint.sh /docker-entrypoint.d/
+# Hashes: `sha256sum` on the host copy; identical to `sha256sum` run inside the image (diff empty).
+# Modes and owners in the image (root:root): scripts 0755, all other files 0644, dirs 0755.
+# Symlink in the image (not kept here, see D1 in docs/decisions.md):
+#   /etc/nginx/modules -> /usr/lib/nginx/modules  (created by the build instead)
+
+8c5d2c912416126c7d65651600b166c00ad9ca3e3af82487ddd5a5da94fb8fb5  /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+3659a4a271496f6a8f0785a1d7e57a9348803e90c08fe57431fe3ee19b010644  /docker-entrypoint.d/15-local-resolvers.envsh
+253c8724acff9f5c0d0e8938e71fe7c33097d40031a5bc9c7f59dfd2ba5f1377  /docker-entrypoint.d/20-envsubst-on-templates.sh
+1f068aa49da8df46bfd5a917debf110af9b115370739e3be34af83ebf583fbce  /docker-entrypoint.d/30-tune-worker-processes.sh
+3372fd90162da30d09f62c245e9c6bfd620fb0bb5b48ab54b16e804c2b9e8aae  /docker-entrypoint.sh
+48801b39b849818cd0a79221fa1e2b60aa198453368fdd46071d4b9883f5777c  /etc/nginx/conf.d/default.conf
+f37852d0113de30fa6bfc3d9b180ef99383c06739530dd482a8538503afd5a58  /etc/nginx/fastcgi_params
+6f95d1d7d75e3c072907d845622a69d23110d1266c16ff122b3109b8b21f3ae9  /etc/nginx/mime.types
+078266b9ee3e3c9c8ff30a342e089d7015c3e148bb9d1d41493d38615ae8adec  /etc/nginx/nginx.conf
+f27b2027c571ccafcfb0fbb3f54d7aeee11a984e3a0f5a1fdf14629030fc9011  /etc/nginx/scgi_params
+015cb581c2eb84b1a1ac9b575521d5881f791f632bfa62f34b26ba97d70c0d4f  /etc/nginx/uwsgi_params
+876766b4e80133fd490603e073d3567425b88794828a9292104244c9e40875ed  /usr/share/nginx/html/50x.html
+fb47468a2cd3953c7131431991afcc6a2703f14640520102eea0a685a7e8d6de  /usr/share/nginx/html/index.html

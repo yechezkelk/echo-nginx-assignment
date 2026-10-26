@@ -1,0 +1,4 @@
+# findings on echo-nginx:1.25.5-echo1 without VEX (464) minus with --vex vex/echo-nginx.openvex.json (463)
+# removed (comm -23):
+CVE-2026-15176	nginx	1.25.5-1echo1
+# added (comm -13, expected none):

@@ -1,0 +1,18 @@
+ new Debian package, version 2.0.
+ size 1341704 bytes: control archive=1636 bytes.
+     148 bytes,     6 lines      conffiles            
+     667 bytes,    12 lines      control              
+    1674 bytes,    23 lines      md5sums              
+     603 bytes,    17 lines   *  postinst             #!/bin/sh
+ Package: nginx
+ Version: 1.25.5-1echo1
+ Architecture: amd64
+ Section: httpd
+ Priority: optional
+ Maintainer: Yechezkel Kofman <yechezkelkofman@gmail.com>
+ Depends: libc6 (>= 2.35), libcrypt1 (>= 1:4.1.0), libgd3 (>= 2.1.0~alpha~), libgeoip1 (>= 1.6.12), libpcre2-8-0 (>= 10.49), libssl3 (>= 3.0.0), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4)
+ Homepage: https://nginx.org
+ Description: high performance web server
+  nginx 1.25.5 built from source with the CVE-2026-15176 fix backported from upstream
+  commit f8a2342, linked against PCRE2 10.49. Includes nginx-debug and the xslt,
+  image_filter, geoip (http, stream) and njs (http, stream) dynamic modules.

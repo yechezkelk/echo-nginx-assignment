@@ -1,0 +1,249 @@
+CVE-2005-2541	no	tar@1.34+dfsg-1.2+deb12u1
+CVE-2007-5686	no	login@1:4.13+dfsg1-1+deb12u2 passwd@1:4.13+dfsg1-1+deb12u2
+CVE-2009-4487	no	nginx@1.25.5-1echo1
+CVE-2010-4756	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2011-3374	no	apt@2.6.1 libapt-pkg6.0@2.6.1
+CVE-2011-3389	no	libgnutls30@3.7.9-2+deb12u7
+CVE-2011-4116	no	perl-base@5.36.0-7+deb12u4
+CVE-2013-0337	no	nginx@1.25.5-1echo1
+CVE-2013-4392	no	libsystemd0@252.39-1~deb12u2 libudev1@252.39-1~deb12u2
+CVE-2015-3276	no	libldap-2.5-0@2.5.13+dfsg-5
+CVE-2015-9019	no	libxslt1.1@1.1.35-1+deb12u4
+CVE-2016-2781	no	coreutils@9.1-1
+CVE-2017-14159	no	libldap-2.5-0@2.5.13+dfsg-5
+CVE-2017-16232	no	libtiff6@4.5.0-6+deb12u4
+CVE-2017-17740	no	libldap-2.5-0@2.5.13+dfsg-5
+CVE-2017-18018	no	coreutils@9.1-1
+CVE-2017-9937	no	libjbig0@2.1-6.1
+CVE-2018-10126	no	libtiff6@4.5.0-6+deb12u4
+CVE-2018-20796	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2018-5709	no	libgssapi-krb5-2@1.20.1-2+deb12u5 libk5crypto3@1.20.1-2+deb12u5 libkrb5-3@1.20.1-2+deb12u5 libkrb5support0@1.20.1-2+deb12u5
+CVE-2018-6829	no	libgcrypt20@1.10.1-3+deb12u1
+CVE-2019-1010022	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2019-1010023	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2019-1010024	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2019-1010025	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2019-9192	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2020-15719	no	libldap-2.5-0@2.5.13+dfsg-5
+CVE-2021-4214	no	libpng16-16@1.6.39-2+deb12u6
+CVE-2022-0563	no	bsdutils@1:2.38.1-5+deb12u3 libblkid1@2.38.1-5+deb12u3 libmount1@2.38.1-5+deb12u3 libsmartcols1@2.38.1-5+deb12u3 libuuid1@2.38.1-5+deb12u3 mount@2.38.1-5+deb12u3 util-linux@2.38.1-5+deb12u3 util-linux-extra@2.38.1-5+deb12u3
+CVE-2022-1210	no	libtiff6@4.5.0-6+deb12u4
+CVE-2022-27943	no	gcc-12-base@12.2.0-14+deb12u1 libgcc-s1@12.2.0-14+deb12u1 libstdc++6@12.2.0-14+deb12u1
+CVE-2022-3219	no	gpgv@2.2.40-1.1+deb12u2
+CVE-2023-1916	no	libtiff6@4.5.0-6+deb12u4
+CVE-2023-2953	no	libldap-2.5-0@2.5.13+dfsg-5
+CVE-2023-31437	no	libsystemd0@252.39-1~deb12u2 libudev1@252.39-1~deb12u2
+CVE-2023-31438	no	libsystemd0@252.39-1~deb12u2 libudev1@252.39-1~deb12u2
+CVE-2023-31439	no	libsystemd0@252.39-1~deb12u2 libudev1@252.39-1~deb12u2
+CVE-2023-31486	no	perl-base@5.36.0-7+deb12u4
+CVE-2023-3164	no	libtiff6@4.5.0-6+deb12u4
+CVE-2023-32570	no	libdav1d6@1.0.0-2+deb12u1
+CVE-2023-39616	no	libaom3@3.6.0-1+deb12u3
+CVE-2023-44487	no	nginx@1.25.5-1echo1
+CVE-2023-49463	no	libheif1@1.15.1-1+deb12u1
+CVE-2023-50495	no	libtinfo6@6.4-4 ncurses-base@6.4-4 ncurses-bin@6.4-4
+CVE-2023-52355	no	libtiff6@4.5.0-6+deb12u4
+CVE-2023-52426	no	libexpat1@2.5.0-1+deb12u5
+CVE-2023-6228	no	libtiff6@4.5.0-6+deb12u4
+CVE-2023-6277	no	libtiff6@4.5.0-6+deb12u4
+CVE-2023-6879	no	libaom3@3.6.0-1+deb12u3
+CVE-2024-10041	no	libpam-modules@1.5.2-6+deb12u2 libpam-modules-bin@1.5.2-6+deb12u2 libpam-runtime@1.5.2-6+deb12u2 libpam0g@1.5.2-6+deb12u2
+CVE-2024-13978	no	libtiff6@4.5.0-6+deb12u4
+CVE-2024-2236	no	libgcrypt20@1.10.1-3+deb12u1
+CVE-2024-2379	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2024-25269	no	libheif1@1.15.1-1+deb12u1
+CVE-2024-26458	no	libgssapi-krb5-2@1.20.1-2+deb12u5 libk5crypto3@1.20.1-2+deb12u5 libkrb5-3@1.20.1-2+deb12u5 libkrb5support0@1.20.1-2+deb12u5
+CVE-2024-26461	no	libgssapi-krb5-2@1.20.1-2+deb12u5 libk5crypto3@1.20.1-2+deb12u5 libkrb5-3@1.20.1-2+deb12u5 libkrb5support0@1.20.1-2+deb12u5
+CVE-2024-56433	no	login@1:4.13+dfsg1-1+deb12u2 passwd@1:4.13+dfsg1-1+deb12u2
+CVE-2025-0725	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2025-10911	no	libxslt1.1@1.1.35-1+deb12u4
+CVE-2025-10966	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2025-11731	no	libxslt1.1@1.1.35-1+deb12u4
+CVE-2025-13151	no	libtasn1-6@4.19.0-2+deb12u1
+CVE-2025-14017	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2025-14104	no	bsdutils@1:2.38.1-5+deb12u3 libblkid1@2.38.1-5+deb12u3 libmount1@2.38.1-5+deb12u3 libsmartcols1@2.38.1-5+deb12u3 libuuid1@2.38.1-5+deb12u3 mount@2.38.1-5+deb12u3 util-linux@2.38.1-5+deb12u3 util-linux-extra@2.38.1-5+deb12u3
+CVE-2025-15079	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2025-15224	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2025-27587	no	libssl3@3.0.22-1~deb12u2 openssl@3.0.22-1~deb12u2
+CVE-2025-28162	no	libpng16-16@1.6.39-2+deb12u6
+CVE-2025-28164	no	libpng16-16@1.6.39-2+deb12u6
+CVE-2025-30258	no	gpgv@2.2.40-1.1+deb12u2
+CVE-2025-5278	no	coreutils@9.1-1
+CVE-2025-61143	no	libtiff6@4.5.0-6+deb12u4
+CVE-2025-61144	no	libtiff6@4.5.0-6+deb12u4
+CVE-2025-61145	no	libtiff6@4.5.0-6+deb12u4
+CVE-2025-61147	no	libde265-0@1.0.11-1+deb12u3
+CVE-2025-6141	no	libtinfo6@6.4-4 ncurses-base@6.4-4 ncurses-bin@6.4-4
+CVE-2025-66382	no	libexpat1@2.5.0-1+deb12u5
+CVE-2025-68431	no	libheif1@1.15.1-1+deb12u1
+CVE-2025-68972	no	gpgv@2.2.40-1.1+deb12u2
+CVE-2025-69720	no	libtinfo6@6.4-4 ncurses-base@6.4-4 ncurses-bin@6.4-4
+CVE-2025-8176	no	libtiff6@4.5.0-6+deb12u4
+CVE-2025-8177	no	libtiff6@4.5.0-6+deb12u4
+CVE-2025-8534	no	libtiff6@4.5.0-6+deb12u4
+CVE-2025-8851	no	libtiff6@4.5.0-6+deb12u4
+CVE-2025-8961	no	libtiff6@4.5.0-6+deb12u4
+CVE-2025-9165	no	libtiff6@4.5.0-6+deb12u4
+CVE-2026-102010	no	gcc-12-base@12.2.0-14+deb12u1 libgcc-s1@12.2.0-14+deb12u1 libstdc++6@12.2.0-14+deb12u1
+CVE-2026-102473	no	dash@0.5.12-2
+CVE-2026-102474	no	dash@0.5.12-2
+CVE-2026-10536	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-105712	no	gpgv@2.2.40-1.1+deb12u2
+CVE-2026-107161	no	libsasl2-2@2.1.28+dfsg-10 libsasl2-modules-db@2.1.28+dfsg-10
+CVE-2026-107708	no	libgssapi-krb5-2@1.20.1-2+deb12u5 libk5crypto3@1.20.1-2+deb12u5 libkrb5-3@1.20.1-2+deb12u5 libkrb5support0@1.20.1-2+deb12u5
+CVE-2026-107778	no	libgssapi-krb5-2@1.20.1-2+deb12u5 libk5crypto3@1.20.1-2+deb12u5 libkrb5-3@1.20.1-2+deb12u5 libkrb5support0@1.20.1-2+deb12u5
+CVE-2026-107928	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-113351	no	libexpat1@2.5.0-1+deb12u5
+CVE-2026-115506	no	libexpat1@2.5.0-1+deb12u5
+CVE-2026-11850	no	libgssapi-krb5-2@1.20.1-2+deb12u5 libk5crypto3@1.20.1-2+deb12u5 libkrb5-3@1.20.1-2+deb12u5 libkrb5support0@1.20.1-2+deb12u5
+CVE-2026-11856	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-11979	no	libxml2@2.9.14+dfsg-1.3~deb12u6
+CVE-2026-12064	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-12912	no	libtiff6@4.5.0-6+deb12u4
+CVE-2026-13595	no	bsdutils@1:2.38.1-5+deb12u3 libblkid1@2.38.1-5+deb12u3 libmount1@2.38.1-5+deb12u3 libsmartcols1@2.38.1-5+deb12u3 libuuid1@2.38.1-5+deb12u3 mount@2.38.1-5+deb12u3 util-linux@2.38.1-5+deb12u3 util-linux-extra@2.38.1-5+deb12u3
+CVE-2026-13608	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-13757	no	libp11-kit0@0.24.1-2
+CVE-2026-15059	no	libsystemd0@252.39-1~deb12u2 libudev1@252.39-1~deb12u2
+CVE-2026-15176	no	nginx@1.25.5-1echo1
+CVE-2026-15534	no	perl-base@5.36.0-7+deb12u4
+CVE-2026-16742	no	libsystemd0@252.39-1~deb12u2 libudev1@252.39-1~deb12u2
+CVE-2026-18374	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-18477	no	tar@1.34+dfsg-1.2+deb12u1
+CVE-2026-18495	no	libtiff6@4.5.0-6+deb12u4
+CVE-2026-18508	no	tar@1.34+dfsg-1.2+deb12u1
+CVE-2026-18924	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-18938	no	libp11-kit0@0.24.1-2
+CVE-2026-19499	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-19542	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-1965	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-19931	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-22185	no	libldap-2.5-0@2.5.13+dfsg-5
+CVE-2026-27171	no	zlib1g@1:1.2.13.dfsg-1
+CVE-2026-27456	no	bsdutils@1:2.38.1-5+deb12u3 libblkid1@2.38.1-5+deb12u3 libmount1@2.38.1-5+deb12u3 libsmartcols1@2.38.1-5+deb12u3 libuuid1@2.38.1-5+deb12u3 mount@2.38.1-5+deb12u3 util-linux@2.38.1-5+deb12u3 util-linux-extra@2.38.1-5+deb12u3
+CVE-2026-3184	no	bsdutils@1:2.38.1-5+deb12u3 libblkid1@2.38.1-5+deb12u3 libmount1@2.38.1-5+deb12u3 libsmartcols1@2.38.1-5+deb12u3 libuuid1@2.38.1-5+deb12u3 mount@2.38.1-5+deb12u3 util-linux@2.38.1-5+deb12u3 util-linux-extra@2.38.1-5+deb12u3
+CVE-2026-32738	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-32739	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-32740	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-32741	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-32814	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-32882	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-35189	no	libssl3@3.0.22-1~deb12u2 openssl@3.0.22-1~deb12u2
+CVE-2026-36849	no	libtiff6@4.5.0-6+deb12u4
+CVE-2026-3713	no	libpng16-16@1.6.39-2+deb12u6
+CVE-2026-3949	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-40228	no	libsystemd0@252.39-1~deb12u2 libudev1@252.39-1~deb12u2
+CVE-2026-41069	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-41071	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-41080	no	libexpat1@2.5.0-1+deb12u5
+CVE-2026-41991	no	gzip@1.12-1
+CVE-2026-41992	no	gzip@1.12-1
+CVE-2026-42250	no	libbz2-1.0@1.0.8-5+b1
+CVE-2026-4367	no	libxpm4@1:3.5.12-1.1+deb12u1
+CVE-2026-47178	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-47247	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-47254	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-47709	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-47714	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-48029	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-4873	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-49271	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-50142	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-52490	no	libtiff6@4.5.0-6+deb12u4
+CVE-2026-52491	no	libtiff6@4.5.0-6+deb12u4
+CVE-2026-52492	no	libtiff6@4.5.0-6+deb12u4
+CVE-2026-53613	no	bsdutils@1:2.38.1-5+deb12u3 libblkid1@2.38.1-5+deb12u3 libmount1@2.38.1-5+deb12u3 libsmartcols1@2.38.1-5+deb12u3 libuuid1@2.38.1-5+deb12u3 mount@2.38.1-5+deb12u3 util-linux@2.38.1-5+deb12u3 util-linux-extra@2.38.1-5+deb12u3
+CVE-2026-53615	no	bsdutils@1:2.38.1-5+deb12u3 libblkid1@2.38.1-5+deb12u3 libmount1@2.38.1-5+deb12u3 libsmartcols1@2.38.1-5+deb12u3 libuuid1@2.38.1-5+deb12u3 mount@2.38.1-5+deb12u3 util-linux@2.38.1-5+deb12u3 util-linux-extra@2.38.1-5+deb12u3
+CVE-2026-53910	no	diffutils@1:3.8-4
+CVE-2026-5435	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-54369	no	libacl1@2.3.1-3
+CVE-2026-54370	no	libacl1@2.3.1-3
+CVE-2026-54371	no	libattr1@1:2.5.1-4
+CVE-2026-54411	no	libpam-modules@1.5.2-6+deb12u2 libpam-modules-bin@1.5.2-6+deb12u2 libpam-runtime@1.5.2-6+deb12u2 libpam0g@1.5.2-6+deb12u2
+CVE-2026-5450	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-54872	no	libssl3@3.0.22-1~deb12u2 openssl@3.0.22-1~deb12u2
+CVE-2026-5545	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-56391	no	coreutils@9.1-1
+CVE-2026-56392	no	coreutils@9.1-1
+CVE-2026-5704	no	tar@1.34+dfsg-1.2+deb12u1
+CVE-2026-57062	no	gpgv@2.2.40-1.1+deb12u2
+CVE-2026-58055	no	libnghttp2-14@1.52.0-1+deb12u3
+CVE-2026-5928	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-62289	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-62292	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-6238	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-6253	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-6276	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-6368	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-6429	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-6653	no	libxml2@2.9.14+dfsg-1.3~deb12u6
+CVE-2026-67693	no	libgnutls30@3.7.9-2+deb12u7
+CVE-2026-6791	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-74860	no	libxml2@2.9.14+dfsg-1.3~deb12u6
+CVE-2026-75805	no	libssl3@3.0.22-1~deb12u2 openssl@3.0.22-1~deb12u2
+CVE-2026-75806	no	libssl3@3.0.22-1~deb12u2 openssl@3.0.22-1~deb12u2
+CVE-2026-76642	no	bsdutils@1:2.38.1-5+deb12u3 libblkid1@2.38.1-5+deb12u3 libmount1@2.38.1-5+deb12u3 libsmartcols1@2.38.1-5+deb12u3 libuuid1@2.38.1-5+deb12u3 mount@2.38.1-5+deb12u3 util-linux@2.38.1-5+deb12u3 util-linux-extra@2.38.1-5+deb12u3
+CVE-2026-76781	no	libxml2@2.9.14+dfsg-1.3~deb12u6
+CVE-2026-77117	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-77696	no	libssl3@3.0.22-1~deb12u2 openssl@3.0.22-1~deb12u2
+CVE-2026-78408	no	bsdutils@1:2.38.1-5+deb12u3 libblkid1@2.38.1-5+deb12u3 libmount1@2.38.1-5+deb12u3 libsmartcols1@2.38.1-5+deb12u3 libuuid1@2.38.1-5+deb12u3 mount@2.38.1-5+deb12u3 util-linux@2.38.1-5+deb12u3 util-linux-extra@2.38.1-5+deb12u3
+CVE-2026-78409	no	bsdutils@1:2.38.1-5+deb12u3 libblkid1@2.38.1-5+deb12u3 libmount1@2.38.1-5+deb12u3 libsmartcols1@2.38.1-5+deb12u3 libuuid1@2.38.1-5+deb12u3 mount@2.38.1-5+deb12u3 util-linux@2.38.1-5+deb12u3 util-linux-extra@2.38.1-5+deb12u3
+CVE-2026-78410	no	bsdutils@1:2.38.1-5+deb12u3 libblkid1@2.38.1-5+deb12u3 libmount1@2.38.1-5+deb12u3 libsmartcols1@2.38.1-5+deb12u3 libuuid1@2.38.1-5+deb12u3 mount@2.38.1-5+deb12u3 util-linux@2.38.1-5+deb12u3 util-linux-extra@2.38.1-5+deb12u3
+CVE-2026-80230	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-80489	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-82209	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-82560	no	perl-base@5.36.0-7+deb12u4
+CVE-2026-8286	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-84384	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-84444	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-84446	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-84447	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-84448	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-84449	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-84450	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-84451	no	libheif1@1.15.1-1+deb12u1
+CVE-2026-8458	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-84782	no	libssl3@3.0.22-1~deb12u2 openssl@3.0.22-1~deb12u2
+CVE-2026-85091	no	zlib1g@1:1.2.13.dfsg-1
+CVE-2026-86138	no	libxml2@2.9.14+dfsg-1.3~deb12u6
+CVE-2026-86140	no	libxml2@2.9.14+dfsg-1.3~deb12u6
+CVE-2026-86142	no	libxml2@2.9.14+dfsg-1.3~deb12u6
+CVE-2026-86143	no	libxml2@2.9.14+dfsg-1.3~deb12u6
+CVE-2026-86144	no	libxml2@2.9.14+dfsg-1.3~deb12u6
+CVE-2026-86409	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-86410	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-86414	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-8674	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-86805	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-87864	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-87865	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-87866	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-88373	no	libde265-0@1.0.11-1+deb12u3
+CVE-2026-88647	no	libgnutls30@3.7.9-2+deb12u7
+CVE-2026-88648	no	libgnutls30@3.7.9-2+deb12u7
+CVE-2026-88806	no	libx11-6@2:1.8.4-2+deb12u2 libx11-data@2:1.8.4-2+deb12u2
+CVE-2026-89092	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-8924	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-8927	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-8932	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-92388	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-92389	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-92390	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-92391	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-93479	no	nginx@1.25.5-1echo1
+CVE-2026-94266	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-94283	no	libx11-6@2:1.8.4-2+deb12u2 libx11-data@2:1.8.4-2+deb12u2
+CVE-2026-94284	no	libx11-6@2:1.8.4-2+deb12u2 libx11-data@2:1.8.4-2+deb12u2
+CVE-2026-94285	no	libx11-6@2:1.8.4-2+deb12u2 libx11-data@2:1.8.4-2+deb12u2
+CVE-2026-94287	no	libxpm4@1:3.5.12-1.1+deb12u1
+CVE-2026-95101	no	nginx@1.25.5-1echo1
+CVE-2026-95184	no	libgnutls30@3.7.9-2+deb12u7
+CVE-2026-95209	no	libgnutls30@3.7.9-2+deb12u7
+CVE-2026-95210	no	libgnutls30@3.7.9-2+deb12u7
+CVE-2026-9538	no	perl-base@5.36.0-7+deb12u4
+CVE-2026-9547	no	curl@7.88.1-10+deb12u15 libcurl4@7.88.1-10+deb12u15
+CVE-2026-95512	no	libfreetype6@2.12.1+dfsg-5+deb12u4
+CVE-2026-95619	no	gcc-12-base@12.2.0-14+deb12u1 libgcc-s1@12.2.0-14+deb12u1 libstdc++6@12.2.0-14+deb12u1
+CVE-2026-95818	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-97205	no	nginx@1.25.5-1echo1
+CVE-2026-97399	no	libc-bin@2.36-9+deb12u14 libc6@2.36-9+deb12u14
+CVE-2026-97629	no	nginx@1.25.5-1echo1

@@ -1,0 +1,2 @@
+patching file src/http/ngx_http_core_module.c
+Hunk #1 succeeded at 1884 (offset -103 lines).

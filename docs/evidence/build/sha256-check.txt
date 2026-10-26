@@ -1,0 +1,5 @@
+pcre2-10.49.tar.gz: OK
+pcre2-10.49.tar.gz.sig: OK
+nginx-1.25.5.tar.gz: OK
+nginx-1.25.5.tar.gz.asc: OK
+njs-0.8.4.tar.gz: OK

@@ -1,0 +1,10 @@
+drwxr-xr-x root/root         0 2026-10-26 09:05 ./
+drwxr-xr-x root/root         0 2026-10-26 09:05 ./usr/
+drwxr-xr-x root/root         0 2026-10-26 09:05 ./usr/lib/
+drwxr-xr-x root/root         0 2026-10-26 09:06 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    698880 2026-10-26 09:06 ./usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.16.1
+drwxr-xr-x root/root         0 2026-10-26 09:05 ./usr/share/
+drwxr-xr-x root/root         0 2026-10-26 09:05 ./usr/share/doc/
+drwxr-xr-x root/root         0 2026-10-26 09:06 ./usr/share/doc/libpcre2-8-0/
+-rw-r--r-- root/root      4011 2026-10-26 09:06 ./usr/share/doc/libpcre2-8-0/copyright
+lrwxrwxrwx root/root         0 2026-10-26 09:06 ./usr/lib/x86_64-linux-gnu/libpcre2-8.so.0 -> libpcre2-8.so.0.16.1

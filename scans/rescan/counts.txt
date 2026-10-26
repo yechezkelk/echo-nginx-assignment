@@ -1,0 +1,22 @@
+== trivy
+unique IDs: baseline 531, ours 273
+gone, by bucket:
+    265 incidental
+      1 intentional
+gone, by reason:
+      1 intentional
+    259 newer-bookworm
+      6 pcre2-bump
+new in ours: 8 IDs
+remaining: 273 IDs, fix available: 1, no fix: 272
+== grype
+unique IDs: baseline 500, ours 249
+gone, by bucket:
+    250 incidental
+      1 intentional
+gone, by reason:
+      1 intentional
+    244 newer-bookworm
+      6 pcre2-bump
+new in ours: 0 IDs
+remaining: 249 IDs, fix available: 0, no fix: 249

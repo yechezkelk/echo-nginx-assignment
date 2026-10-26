@@ -1,0 +1,8 @@
+$ dpkg --compare-versions 10.49-0echo1 gt 10.42-1+deb12u2 && echo newer
+newer
+$ dpkg --compare-versions 10.49-0echo1 gt 10.42-1 && echo newer
+newer
+soname: libpcre2-8.so.0  file: libpcre2-8.so.0.16.1
+PCRE2 version 10.49 2026-09-28
+  Just-in-time compiler support
+    Architecture: x86 64bit (little endian + unaligned)

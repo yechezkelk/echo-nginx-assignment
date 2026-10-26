@@ -1,0 +1,45 @@
+# Fresh clone: git clone /root/echo-nginx-assignment /tmp/claude-0/-root-echo-nginx-assignment/44854766-bbbe-4310-8aa3-80da098b6632/scratchpad/clone
+# Commit: c2db4b40aff766bff68d943d0e7b2792d0021d66
+# Started: 2026-10-26T15:10:34Z  host: Linux 6.18.54.1-microsoft-standard-WSL2  Docker version 27.3.1, build ce12230
+== make all
+real 133.564 s  user 1.035 s  sys 1.051 s
+exit 0
+== make test
+real 34.968 s  user 1.859 s  sys 3.188 s
+exit 0
+== make scan
+real 45.800 s  user 25.952 s  sys 28.061 s
+exit 0
+== make vex
+real 21.977 s  user 13.999 s  sys 6.450 s
+exit 0
+# Finished: 2026-10-26T15:14:31Z
+
+# Produced by: bash timed.sh <clone> <logdir>, which runs, for t in all test scan vex:
+#   time make -C <clone> $t > make-$t.log 2>&1      (bash `time`, TIMEFORMAT real/user/sys)
+# All four targets exited 0. Full `make test` output: make-test.txt (same directory).
+#
+# Docker build cache (from the BuildKit step lines in make-all.log): this was NOT a cold build.
+#   Reused from the local cache: the three `apt-get install` layers and the whole PCRE2 stage
+#   (configure, make, make check, packaging of libpcre2-8-0).
+#   Ran fresh: fetch-sources.sh (download + sha256 + GPG, 6.0 s) and the nginx stage
+#   (configure, compile, patch, packaging: build-nginx.sh step 84.8 s), then verify-debs and the image.
+#   A build with an empty cache also runs those apt installs and the PCRE2 build, so it takes longer.
+#   `make scan` used the scanners' local DBs with DB update off (trivy --skip-db-update,
+#   GRYPE_DB_AUTO_UPDATE=false).
+#
+# Results in the clone:
+#   make test: contract diff "contract matches (only allow-listed differences)";
+#              compat test "28 checks, 28 PASS, 0 FAIL";
+#              fix checks "8 passed, 0 failed" for each CVE (16 in total).
+#   make scan: unique CVE IDs Trivy 531 -> 273, Grype 500 -> 249; the clone's counts.txt and its four
+#              ids-*.txt lists are byte-identical to the committed ones in scans/rescan/ (cmp).
+#   make vex:  findings Trivy 464 -> 463, Grype 445 -> 444; removed only CVE-2026-15176 nginx 1.25.5-1echo1.
+#   `git status` in the clone afterwards: tracked evidence changed only in timestamps, image IDs,
+#   scan report metadata and the rebuilt nginx .deb's sha256/size; the nginx .deb's file list
+#   (dpkg-deb -c, dates ignored) is identical to the committed one. Rebuilds are not bit-for-bit (D11).
+#
+# Image IDs: make-test.txt names the clone's image, sha256:978525a1... It differs from the image the
+# committed evidence names (sha256:6563287b..., docs/evidence/fixes/, scans/rescan/summary.md), because
+# the clone rebuilt the nginx .deb (new sha256, see above). In the repo itself, `make` reused its
+# cache and reproduced the committed .debs (docs/evidence/build/debs.sha256) and image 6563287b.

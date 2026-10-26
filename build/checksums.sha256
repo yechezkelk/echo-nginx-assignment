@@ -1,0 +1,13 @@
+# sha256 of every upstream download. Lines starting with '#' are comments.
+# The build fails if any file does not match (scripts/fetch-sources.sh runs `sha256sum -c --strict`).
+# Recorded on 2026-10-26 with `sha256sum <file>` after downloading from the URLs below.
+#
+# PCRE2 10.49: https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.49/
+929f0b20e62879252a15886b06c89f1edef61a363cbd5826fb041080a5e557ae  pcre2-10.49.tar.gz
+2cd0107d3cc5bc8f94ec16c623dfe83371bb00ec8166850a75069ec9be343dc6  pcre2-10.49.tar.gz.sig
+# nginx 1.25.5: https://nginx.org/download/
+2fe2294f8af4144e7e842eaea884182a84ee7970e11046ba98194400902bbec0  nginx-1.25.5.tar.gz
+092c4d1781fc9ceb1a759fabffbd5ef09fbe7108f8e37dbf3797eb5a24cf37a2  nginx-1.25.5.tar.gz.asc
+# njs 0.8.4: nginx.org publishes no njs tarball; its install page points to the git repo
+# https://github.com/nginx/njs, so this is the GitHub archive of tag 0.8.4 (commit 3fb0ee5e907c).
+fe197e254204c15e9f1df0acf375add57be3416901ec8d7b87319dccb490f90d  njs-0.8.4.tar.gz

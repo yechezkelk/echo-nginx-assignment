@@ -1,0 +1,19 @@
+ new Debian package, version 2.0.
+ size 239596 bytes: control archive=768 bytes.
+     476 bytes,    13 lines      control              
+     151 bytes,     2 lines      md5sums              
+      37 bytes,     1 lines      shlibs               
+      26 bytes,     1 lines      triggers             
+ Package: libpcre2-8-0
+ Source: pcre2
+ Version: 10.49-0echo1
+ Architecture: amd64
+ Multi-Arch: same
+ Section: libs
+ Priority: optional
+ Maintainer: Yechezkel Kofman <yechezkelkofman@gmail.com>
+ Depends: libc6 (>= 2.34)
+ Homepage: https://pcre2project.github.io/pcre2/
+ Description: New Perl Compatible Regular Expression Library- 8 bit runtime files
+  PCRE2 10.49 built from the upstream release tarball (with JIT), replacing
+  Debian's 10.42 to fix CVE-2026-103111 (GHSA-r9hj-j2rw-4q3m).

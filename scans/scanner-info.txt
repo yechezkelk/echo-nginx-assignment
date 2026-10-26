@@ -1,0 +1,65 @@
+# Scanner versions and vulnerability DB dates (Phase 2, 2026-10-26)
+# Section A: recorded before the scans. Both scanners then auto-updated their DB
+# at scan start, so Section B (after the scans) is the DB actually used.
+
+## A. Before the scans
+$ trivy --version
+Version: 0.76.1
+Vulnerability DB:
+  Version: 2
+  UpdatedAt: 2026-10-25 07:10:41.872962161 +0000 UTC
+  NextUpdate: 2026-10-26 07:10:41.872962061 +0000 UTC
+  DownloadedAt: 2026-10-25 08:07:09.57891491 +0000 UTC
+Java DB:
+  Version: 1
+  UpdatedAt: 2026-10-25 00:59:20.065031654 +0000 UTC
+  NextUpdate: 2026-10-28 00:59:20.065031063 +0000 UTC
+  DownloadedAt: 2026-10-25 08:08:30.74524721 +0000 UTC
+
+$ grype version
+Application:         grype
+Version:             0.121.0
+BuildDate:           2026-10-19T20:26:34Z
+GitCommit:           afe2742527d98d822da06c9f32eed86fe3d193e0
+GitDescription:      v0.121.0
+Platform:            linux/amd64
+GoVersion:           go1.26.8
+Compiler:            gc
+Syft Version:        v1.55.0
+Supported DB Schema: 6
+
+$ grype db status
+Path:      /root/.cache/grype/db/6/vulnerability.db
+Schema:    v6.1.10
+Built:     2026-10-25T06:27:34Z
+From:      https://grype.anchore.io/databases/v6/vulnerability-db_v6.1.10_2026-10-25T00:33:23Z_1792909654.tar.zst?checksum=sha256%3A4bdb42924659936a80a73f5df039603dc01734ed6032575b9879745216a713ea
+Status:    valid
+
+## B. After the scans (DB used for scans/baseline-*)
+$ trivy --version
+Version: 0.76.1
+Vulnerability DB:
+  Version: 2
+  UpdatedAt: 2026-10-26 07:15:18.945937093 +0000 UTC
+  NextUpdate: 2026-10-27 07:15:18.945936953 +0000 UTC
+  DownloadedAt: 2026-10-26 08:16:23.030808178 +0000 UTC
+Java DB:
+  Version: 1
+  UpdatedAt: 2026-10-25 00:59:20.065031654 +0000 UTC
+  NextUpdate: 2026-10-28 00:59:20.065031063 +0000 UTC
+  DownloadedAt: 2026-10-25 08:08:30.74524721 +0000 UTC
+
+$ grype db status
+Path:      /root/.cache/grype/db/6/vulnerability.db
+Schema:    v6.1.10
+Built:     2026-10-26T06:38:44Z
+From:      https://grype.anchore.io/databases/v6/vulnerability-db_v6.1.10_2026-10-26T00:32:02Z_1792996724.tar.zst?checksum=sha256%3A214b59fbe13608346ee1b22583ec0531083d6088c33891f3520d0fbdedb1b308
+Status:    valid
+
+$ jq -c ".Metadata | {OS, ImageID, RepoDigests}, .CreatedAt" scans/baseline-trivy.json
+{"OS":{"Family":"debian","Name":"12.5"},"ImageID":"sha256:e784f4560448b14a66f55c26e1b4dad2c2877cc73d001b7cd0b18e24a700a070","RepoDigests":["nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c"],"arch":"amd64"}
+"2026-10-26T10:16:23.733857663+02:00"
+
+$ jq -c ".descriptor | {version,timestamp,db}, .source.target | {...}" scans/baseline-grype.json
+{"version":"0.121.0","timestamp":"2026-10-26T10:18:15.296019734+02:00","db":{"status":{"schemaVersion":"v6.1.10","from":"https://grype.anchore.io/databases/v6/vulnerability-db_v6.1.10_2026-10-26T00:32:02Z_1792996724.tar.zst?checksum=sha256%3A214b59fbe13608346ee1b22583ec0531083d6088c33891f3520d0fbdedb1b308","built":"2026-10-26T06:38:44Z","path":"/root/.cache/grype/db/6/vulnerability.db","valid":true},"providers":{"alma":{"captured":"2026-10-26T00:32:26Z","input":"xxh64:36013c18ce235c0f"},"alpine":{"captured":"2026-10-26T00:32:05Z","input":"xxh64:c888fcdab02a13c2"},"amazon":{"captured":"2026-10-26T00:32:30Z","input":"xxh64:58e8e555c332b3ed"},"arch":{"captured":"2026-10-26T00:32:02Z","input":"xxh64:094542fe047fe201"},"bitnami":{"captured":"2026-10-26T00:32:09Z","input":"xxh64:2b1346dbed238663"},"chainguard":{"captured":"2026-10-26T00:33:11Z","input":"xxh64:295353fa62c9d4af"},"chainguard-libraries":{"captured":"2026-10-26T00:32:12Z","input":"xxh64:0cbed5b85b575a7e"},"debian":{"captured":"2026-10-26T00:32:23Z","input":"xxh64:f7fd44b957373a62"},"echo":{"captured":"2026-10-26T00:32:06Z","input":"xxh64:81300a7c37cf240d"},"eol":{"captured":"2026-10-26T00:32:08Z","input":"xxh64:3b3dabae5f3c2274"},"epss":{"captured":"2026-10-26T00:32:35Z","input":"xxh64:3c4d630d6a09436b"},"fedora":{"captured":"2026-10-26T00:32:28Z","input":"xxh64:f46428ce19e4c846"},"github":{"captured":"2026-10-26T00:32:20Z","input":"xxh64:a898b91897c2fff8"},"govulndb":{"captured":"2026-10-26T00:32:06Z","input":"xxh64:c19a99a43955fa4d"},"hummingbird":{"captured":"2026-10-26T00:35:04Z","input":"xxh64:85de8f51593c793e"},"kev":{"captured":"2026-10-26T00:32:26Z","input":"xxh64:4c67d82913f456f9"},"mariner":{"captured":"2026-10-26T00:32:36Z","input":"xxh64:031d4fdee3dbc81a"},"minimos":{"captured":"2026-10-26T00:32:25Z","input":"xxh64:a297ad26e8284508"},"nvd":{"captured":"2026-10-26T00:33:09Z","input":"xxh64:86bfe769a8571a97"},"oracle":{"captured":"2026-10-26T00:32:23Z","input":"xxh64:fdaf1d830024bebf"},"photon":{"captured":"2026-10-26T00:32:07Z","input":"xxh64:864e8c10f4986f96"},"rhel":{"captured":"2026-10-26T00:33:29Z","input":"xxh64:5b85dcbb0eb4255b"},"secureos":{"captured":"2026-10-26T00:32:16Z","input":"xxh64:83f8276a8b4d8bd2"},"sles":{"captured":"2026-10-26T00:34:15Z","input":"xxh64:94555f904efd9f39"},"ubuntu":{"captured":"2026-10-26T00:33:08Z","input":"xxh64:06429ecb88a98560"},"wolfi":{"captured":"2026-10-26T00:32:09Z","input":"xxh64:87f5d5b78fc13a8b"}}}}
+{"userInput":"nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c","imageID":"sha256:e784f4560448b14a66f55c26e1b4dad2c2877cc73d001b7cd0b18e24a700a070","repoDigests":["nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c"],"architecture":"amd64","os":"linux"}

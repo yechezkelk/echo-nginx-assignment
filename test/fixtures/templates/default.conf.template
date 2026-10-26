@@ -1,0 +1,12 @@
+# Profile 4 of test/compat_test.py ("entrypoint templating").
+# Mounted at /etc/nginx/templates/; the entrypoint (20-envsubst-on-templates.sh) renders it to
+# /etc/nginx/conf.d/default.conf, replacing only defined env vars (ECHO_GREETING), not $uri.
+server {
+    listen       80;
+    server_name  localhost;
+
+    location / {
+        add_header X-Echo-Greeting "${ECHO_GREETING}";
+        return 200 "greeting=${ECHO_GREETING} uri=$uri\n";
+    }
+}

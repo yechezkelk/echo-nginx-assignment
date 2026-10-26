@@ -1,0 +1,10 @@
+# Build context is the repo root; send only what build/Dockerfile copies.
+# (BuildKit reads <Dockerfile>.dockerignore next to the Dockerfile.)
+*
+!build/checksums.sha256
+!build/keys
+!build/patches
+!build/scripts
+!build/nginx-configure.sh
+!rootfs/etc/nginx
+!rootfs/usr/share/nginx
